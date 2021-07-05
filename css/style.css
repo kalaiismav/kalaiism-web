@@ -1,0 +1,281 @@
+* {
+  font-family: 'satoshi', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'satoshi', sans-serif;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Satoshi-Variable',sans-serif;
+  src: url('fonts/Satoshi-Variable.woff2') format('woff2'),
+       url('fonts/Satoshi-Variable.woff') format('woff'),
+       url('fonts/Satoshi-Variable.ttf') format('truetype');
+       font-weight: 300 900;
+       font-display: swap;
+       font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi-Light',sans-serif;
+  src: url('fonts/Satoshi-Light.woff2') format('woff2'),
+       url('fonts/Satoshi-Light.woff') format('woff'),
+       url('fonts/Satoshi-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Satoshi-Regular',sans-serif;
+  src: url('fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('fonts/Satoshi-Regular.woff') format('woff'),
+       url('fonts/Satoshi-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Satoshi-Medium',sans-serif;
+  src: url('fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('fonts/Satoshi-Medium.woff') format('woff'),
+       url('fonts/Satoshi-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Satoshi-Bold',sans-serif;
+  src: url('fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('fonts/Satoshi-Bold.woff') format('woff'),
+       url('fonts/Satoshi-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Satoshi-Black',sans-serif;
+  src: url('fonts/Satoshi-Black.woff2') format('woff2'),
+       url('fonts/Satoshi-Black.woff') format('woff'),
+       url('fonts/Satoshi-Black.ttf') format('truetype');
+       font-weight: 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+.kalaiism-container{
+  height: 100vh;
+  width: 100%;
+  margin: 0 !important;
+  overflow: hidden;
+}
+.flex-1{
+  flex: 1 !important;
+}
+.k-content-section{
+  height: 100%;
+  padding: 80px 76px !important;
+}
+.k-illustration-section{
+  height: 100%;
+  background-color: #ffb347;
+}
+.k-illustration{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.k-illustration img{
+  width: auto;
+  height: 500px;
+}
+.k-content-container{
+  width: 100%;
+}
+.k-content-title {
+  font-size: 64px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 74px;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #040926;
+}
+.k-content-desc{
+  width: 100%;
+  margin: 32px 0 ;
+  opacity: 0.85;
+  font-size: 18px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: -0.1px;
+  text-align: left;
+  color: #040926;
+}
+.k-content-desc-secondary{
+  opacity: 0.55;
+  font-family: Satoshi;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #040926;
+}
+.k-input {
+  width: 80% !important;
+  height: 54px;
+  padding: 15px 460px 15px 18px;
+  border-radius: 6px 0 0 6px !important;
+  border: solid 1.5px #040926 !important;
+  background-color: #ffffff;
+}
+.form-control{
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #040926 !important;
+}
+.k-input:focus{
+  border: 1px solid #FFB347 !important;
+  border-right-color: #040926 !important;
+}
+.btn-primary{
+  width: 120px;
+  height: 54px;
+  padding: 12px 24px;
+  border-radius: 0 6px 6px 0 !important;
+  background-color: #040926 !important;
+  border: none !important;
+  outline: none !important;
+}
+.btn-primary,.k-input:focus{
+  box-shadow: none !important;
+}
+.k-content-footer a {
+  margin-right: 24px;
+  transform: scale(1);
+  -webkit-transition: -webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
+  transition: transform .2s cubic-bezier(.165, .84, .44, 1);
+  transition: transform .2s cubic-bezier(.165, .84, .44, 1),-webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
+}
+.k-content-footer a:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.k-responsive-top{
+  display: none;
+  padding: 24px;
+}
+
+
+@media only screen and (max-width: 320px){
+  .kalaiism-container{
+    height: 100% !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    flex-direction: column-reverse!important;
+  }
+  .k-content-section{
+    height: 100%;
+    width: 100%;
+    padding: 40px 24px 80px 24px !important;
+  }
+  .k-content-top , .k-content-footer{
+    display: none !important;
+  }
+  .k-responsive-content-top img{
+    height: 32px !important;
+    width: auto !important;
+  }
+  .k-responsive-top{
+    display: block !important;
+    padding: 24px !important;
+  }
+  .k-responsive-social a img{
+    width: 32px !important;
+    height: auto !important;
+  }
+  .k-responsive-social a{
+    margin-right: 12px !important;
+  }
+  .k-responsive-social a:last-child{
+    margin-right: 0 !important;
+  }
+  .k-content-title{
+    font-size: 38px !important;
+    line-height: 1.39 !important; 
+    text-align: center !important;
+  }
+  .k-content-desc{
+    font-size: 16px !important;
+    line-height: 1.75 !important;
+    text-align: center !important;
+    margin: 16px 0 36px 0 !important;
+  }
+  .k-content-desc-secondary{
+    text-align: center !important;
+  }
+  .k-illustration-section{
+    height: 270px !important;
+  }
+  .k-illustration img{
+    width: auto;
+    height: 200px;
+  }
+}
+
+
+@media only screen and (max-width: 750px){
+  .kalaiism-container{
+    height: 100% !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    flex-direction: column-reverse!important;
+  }
+  .k-content-section{
+    height: 100%;
+    width: 100%;
+    padding: 40px 24px 80px 24px !important;
+  }
+  .k-content-top , .k-content-footer{
+    display: none !important;
+  }
+  .k-responsive-top{
+    display: block !important;
+    padding: 24px !important;
+  }
+  .k-responsive-social a{
+    margin-right: 12px !important;
+  }
+  .k-responsive-social a:last-child{
+    margin-right: 0 !important;
+  }
+  
+  .k-illustration-section{
+    height: 300px !important;
+  }
+  .k-illustration img{
+    width: auto;
+    height: 230px;
+  }
+}
+
