@@ -1,109 +1,61 @@
+
+
 * {
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
-@font-face {
-  font-family: 'Satoshi-Variable';
-  src: url('/assets/fonts/Satoshi-Variable.woff2') format('woff2'),
-       url('/assets/fonts/Satoshi-Variable.woff') format('woff'),
-       url('/assets/fonts/Satoshi-Variable.ttf') format('truetype');
-       font-weight: 300 900;
-       font-display: swap;
-       font-style: normal;
-}
-@font-face {
-  font-family: 'Satoshi-Light';
-  src: url('/assets/fonts/Satoshi-Light.woff2') format('woff2'),
-       url('/assets/fonts/Satoshi-Light.woff') format('woff'),
-       url('/assets/fonts/Satoshi-Light.ttf') format('truetype');
-       font-weight: 300;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Satoshi-Regular';
-  src: url('/assets/fonts/Satoshi-Regular.woff2') format('woff2'),
-       url('/assets/fonts/Satoshi-Regular.woff') format('woff'),
-       url('/assets/fonts/Satoshi-Regular.ttf') format('truetype');
-       font-weight: 400;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Satoshi-Medium';
-  src: url('/assets/fonts/Satoshi-Medium.woff2') format('woff2'),
-       url('/assets/fonts/Satoshi-Medium.woff') format('woff'),
-       url('/assets/fonts/Satoshi-Medium.ttf') format('truetype');
-       font-weight: 500;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Satoshi-Bold';
-  src: url('/assets/fonts/Satoshi-Bold.woff2') format('woff2'),
-       url('/assets/fonts/Satoshi-Bold.woff') format('woff'),
-       url('/assets/fonts/Satoshi-Bold.ttf') format('truetype');
-       font-weight: 700;
-       font-display: swap;
-       font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Satoshi-Black';
-  src: url('/assets/fonts/Satoshi-Black.woff2') format('woff2'),
-       url('/assets/fonts/Satoshi-Black.woff') format('woff'),
-       url('/assets/fonts/Satoshi-Black.ttf') format('truetype');
-       font-weight: 900;
-       font-display: swap;
-       font-style: normal;
-}
-
-.kalaiism-container{
+.kalaiism-container {
   height: 100vh;
   width: 100%;
   margin: 0 !important;
   overflow: hidden;
 }
-.flex-1{
+
+.flex-1 {
   flex: 1 !important;
 }
-.k-content-section{
+
+.k-content-section {
   height: 100%;
   padding: 80px 76px !important;
 }
-.k-illustration-section{
+
+.k-illustration-section {
   height: 100%;
   background-color: #ffb347;
 }
-.k-illustration{
+
+.k-illustration {
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
-.k-illustration img{
+
+.k-illustration img {
   width: auto;
   height: 500px;
 }
-.k-content-container{
+
+.k-content-container {
   width: 100%;
 }
+
 .k-content-title {
   font-size: 64px;
   font-weight: 900;
@@ -114,9 +66,10 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: left;
   color: #040926;
 }
-.k-content-desc{
+
+.k-content-desc {
   width: 100%;
-  margin: 32px 0 ;
+  margin: 32px 0;
   opacity: 0.85;
   font-size: 18px;
   font-weight: 400;
@@ -127,8 +80,10 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: left;
   color: #040926;
 }
-.k-content-desc-secondary{
+
+.k-content-desc-secondary {
   opacity: 0.55;
+  font-family: Satoshi;
   margin-bottom: 12px;
   font-size: 14px;
   font-weight: normal;
@@ -139,6 +94,7 @@ p, h1, h2, h3, h4, h5, h6 {
   text-align: left;
   color: #040926;
 }
+
 .k-input {
   width: 80% !important;
   height: 54px;
@@ -147,16 +103,19 @@ p, h1, h2, h3, h4, h5, h6 {
   border: solid 1.5px #040926 !important;
   background-color: #ffffff;
 }
-.form-control{
+
+.form-control {
   font-size: 16px !important;
   font-weight: 400 !important;
   color: #040926 !important;
 }
-.k-input:focus{
+
+.k-input:focus {
   border: 1px solid #FFB347 !important;
   border-right-color: #040926 !important;
 }
-.btn-primary{
+
+.btn-primary {
   width: 120px;
   height: 54px;
   padding: 12px 24px;
@@ -165,114 +124,118 @@ p, h1, h2, h3, h4, h5, h6 {
   border: none !important;
   outline: none !important;
 }
-.btn-primary,.k-input:focus{
+
+.btn-primary,
+.k-input:focus {
   box-shadow: none !important;
 }
+
 .k-content-footer a {
   margin-right: 24px;
   transform: scale(1);
   -webkit-transition: -webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
   transition: transform .2s cubic-bezier(.165, .84, .44, 1);
-  transition: transform .2s cubic-bezier(.165, .84, .44, 1),-webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
+  transition: transform .2s cubic-bezier(.165, .84, .44, 1), -webkit-transform .2s cubic-bezier(.165, .84, .44, 1);
 }
-.k-content-footer a:hover{
+
+.k-content-footer a:hover {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-.k-responsive-top{
+
+.k-responsive-top {
   display: none;
   padding: 24px;
 }
 
-
-@media only screen and (max-width: 320px){
-  .kalaiism-container{
+@media only screen and (max-width: 320px) {
+  .kalaiism-container {
     height: 100% !important;
     overflow: hidden !important;
     margin: 0 !important;
     flex-direction: column-reverse!important;
   }
-  .k-content-section{
+  .k-content-section {
     height: 100%;
     width: 100%;
     padding: 40px 24px 80px 24px !important;
   }
-  .k-content-top , .k-content-footer{
+  .k-content-top,
+  .k-content-footer {
     display: none !important;
   }
-  .k-responsive-content-top img{
+  .k-responsive-content-top img {
     height: 32px !important;
     width: auto !important;
   }
-  .k-responsive-top{
+  .k-responsive-top {
     display: block !important;
     padding: 24px !important;
   }
-  .k-responsive-social a img{
+  .k-responsive-social a img {
     width: 32px !important;
     height: auto !important;
   }
-  .k-responsive-social a{
+  .k-responsive-social a {
     margin-right: 12px !important;
   }
-  .k-responsive-social a:last-child{
+  .k-responsive-social a:last-child {
     margin-right: 0 !important;
   }
-  .k-content-title{
+  .k-content-title {
     font-size: 38px !important;
-    line-height: 1.39 !important; 
+    line-height: 1.39 !important;
     text-align: center !important;
   }
-  .k-content-desc{
+  .k-content-desc {
     font-size: 16px !important;
     line-height: 1.75 !important;
     text-align: center !important;
     margin: 16px 0 36px 0 !important;
   }
-  .k-content-desc-secondary{
+  .k-content-desc-secondary {
     text-align: center !important;
   }
-  .k-illustration-section{
+  .k-illustration-section {
     height: 270px !important;
   }
-  .k-illustration img{
+  .k-illustration img {
     width: auto;
     height: 200px;
   }
 }
 
-
-@media only screen and (max-width: 750px){
-  .kalaiism-container{
+@media only screen and (max-width: 768px) {
+  .kalaiism-container {
     height: 100% !important;
     overflow: hidden !important;
     margin: 0 !important;
     flex-direction: column-reverse!important;
   }
-  .k-content-section{
+  .k-content-section {
     height: 100%;
     width: 100%;
     padding: 40px 24px 80px 24px !important;
   }
-  .k-content-top , .k-content-footer{
+  .k-content-top,
+  .k-content-footer {
     display: none !important;
   }
-  .k-responsive-top{
+  .k-responsive-top {
     display: block !important;
     padding: 24px !important;
   }
-  .k-responsive-social a{
+  .k-responsive-social a {
     margin-right: 12px !important;
   }
-  .k-responsive-social a:last-child{
+  .k-responsive-social a:last-child {
     margin-right: 0 !important;
   }
-  
-  .k-illustration-section{
+  .k-illustration-section {
     height: 300px !important;
   }
-  .k-illustration img{
+  .k-illustration img {
     width: auto;
     height: 230px;
   }
